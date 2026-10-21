@@ -26,7 +26,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@mono/consts": "workspace:*",
     "zod": "^4.6.0"
   },
   "devDependencies": {

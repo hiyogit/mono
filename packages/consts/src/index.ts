@@ -2,13 +2,6 @@
 
 export const APP_NAME = 'Mono Practice';
 
-/** 포트는 이곳에서만 정의한다. 세 앱이 모두 이 값을 읽는다. */
-export const PORT = {
-  API: 4100,
-  WEB: 3100,
-  ADMIN: 3200,
-} as const;
-
 export const API_ROUTES = {
   USERS: '/users',
 } as const;

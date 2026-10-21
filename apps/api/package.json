@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build": "nest build",
-    "dev": "nest start --watch",
-    "start": "node dist/main.js",
+    "dev": "PORT=4100 nest start --watch",
+    "start": "PORT=4100 node dist/main.js",
     "lint": "eslint ."
   },
   "dependencies": {

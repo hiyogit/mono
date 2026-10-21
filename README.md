@@ -8,7 +8,7 @@ pnpm workspaces + Turborepo 모노레포 실습.
 | `apps/web`   | Next.js (사용자 목록)         | 3100 |
 | `apps/admin` | Vite + React (목록 + 생성 폼) | 3200 |
 
-포트는 `packages/consts`의 `PORT`에서만 정의한다.
+포트는 각 앱의 `package.json` 스크립트에서 지정한다 (`PORT=4100`, `-p 3100`, `--port 3200`).
 
 ## 공유 패키지
 

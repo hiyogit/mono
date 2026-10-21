@@ -1,13 +1,13 @@
 import { z } from 'zod';
-import { PORT } from '@mono/consts';
 
-const defaultApiUrl = `http://localhost:${PORT.API}`;
+// 포트는 각 앱의 package.json 스크립트에서 정한다. 아래는 로컬 개발용 기본값.
+const defaultApiUrl = 'http://localhost:4100';
 
 export const apiEnvSchema = z.object({
-  PORT: z.coerce.number().int().default(PORT.API),
+  PORT: z.coerce.number().int(),
   CORS_ORIGINS: z
     .string()
-    .default(`http://localhost:${PORT.WEB},http://localhost:${PORT.ADMIN}`)
+    .default('http://localhost:3100,http://localhost:3200')
     .transform((s) => s.split(',').map((o) => o.trim())),
 });
 

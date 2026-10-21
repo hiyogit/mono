@@ -231,9 +231,6 @@ importers:
 
   packages/env:
     dependencies:
-      '@mono/consts':
-        specifier: workspace:*
-        version: link:../consts
       zod:
         specifier: ^4.6.0
         version: 4.6.7
