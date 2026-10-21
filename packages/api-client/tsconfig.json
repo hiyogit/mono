@@ -1,0 +1,4 @@
+{
+  "extends": "@mono/tsconfig/library.json",
+  "include": ["src"]
+}

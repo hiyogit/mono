@@ -1,0 +1,32 @@
+{
+  "name": "@mono/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/next.mjs dev",
+    "build": "next build",
+    "start": "node scripts/next.mjs start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@mono/api-client": "workspace:*",
+    "@mono/consts": "workspace:*",
+    "@mono/env": "workspace:*",
+    "@mono/types": "workspace:*",
+    "@mono/ui": "workspace:*",
+    "@mono/utils": "workspace:*",
+    "next": "^16.4.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@mono/eslint-config": "workspace:*",
+    "@mono/tsconfig": "workspace:*",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^10.0.0",
+    "typescript": "~5.9.3"
+  }
+}

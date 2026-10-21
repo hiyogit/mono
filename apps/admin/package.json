@@ -1,0 +1,34 @@
+{
+  "name": "@mono/admin",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@mono/api-client": "workspace:*",
+    "@mono/consts": "workspace:*",
+    "@mono/env": "workspace:*",
+    "@mono/schemas": "workspace:*",
+    "@mono/types": "workspace:*",
+    "@mono/ui": "workspace:*",
+    "@mono/utils": "workspace:*",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.6.0"
+  },
+  "devDependencies": {
+    "@mono/eslint-config": "workspace:*",
+    "@mono/tsconfig": "workspace:*",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.1.0",
+    "eslint": "^10.0.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.0"
+  }
+}
